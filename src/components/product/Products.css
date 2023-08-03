@@ -1,0 +1,108 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  transition: color 0.5s ease;
+  margin-bottom: 20px;
+}
+.product:hover {
+  color: #00ab9f;
+  cursor: pointer;
+}
+.product__img:hover > img {
+  transform: translateY(-10px);
+}
+.product__sale {
+  position: absolute;
+  background-color: #29f4dc;
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 10;
+}
+.product__img {
+  height: 195px;
+}
+.product__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 15px 20px 0 20px;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 739px) and (min-width: 600px) {
+  .product__img img {
+    padding: 15px 73px 0;
+  }
+}
+.product__content {
+  padding: 18px 20px 0 20px;
+  text-align: center;
+}
+.product__content-title {
+  font-size: 12px;
+  font-weight: bold;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  text-transform: uppercase;
+}
+.product__content-price {
+  padding: 23px 0 19px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #00ab9f;
+  font-weight: bold;
+}
+.product__content-price > :last-child {
+  text-decoration-line: line-through;
+  font-size: 12px;
+  color: #999;
+}
+
+.page__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  margin: 20px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #00ab9f;
+}
+
+@media (min-width: 740px) {
+  .product__content {
+    padding: 25px 8px 15px;
+  }
+}
+.search {
+  width: 100%;
+  outline: none;
+}
