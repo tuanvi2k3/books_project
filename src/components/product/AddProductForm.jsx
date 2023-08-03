@@ -31,6 +31,7 @@ const AddProductForm = () => {
       }
     } else {
       setErrors(formErrors);
+      console.log("hh");
     }
   };
 
