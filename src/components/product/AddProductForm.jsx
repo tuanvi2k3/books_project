@@ -31,13 +31,12 @@ const AddProductForm = () => {
       }
     } else {
       setErrors(formErrors);
-      console.log("hh");
     }
   };
 
   const validateForm = () => {
     const errors = {};
-    if (!phones.title.trim() && !phones.title.length >= 24) {
+    if (!phones.title.trim()) {
       errors.title = "Product Name không được để trống";
     }
     if (!phones.price) {
@@ -55,7 +54,7 @@ const AddProductForm = () => {
   };
 
   return (
-    <>
+    <div>
       <form action="" method="POST">
         <div className="formbold-input-flex">
           <div>
@@ -175,7 +174,7 @@ const AddProductForm = () => {
           Add Now
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

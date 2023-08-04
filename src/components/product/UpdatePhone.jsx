@@ -15,7 +15,7 @@ const UpdatePhone = () => {
     axios
       .get(`http://localhost:3001/phones/${id}`)
       .then((response) => {
-        const { title, price, description, imageURL } = response.data;
+        const { title, price, description, imageURL } = response.data[0];
         setTitle(title);
         setPrice(price);
         setDescription(description);

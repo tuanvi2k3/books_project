@@ -24,8 +24,12 @@ const Header = () => {
             <Link>Get Involved</Link>
           </nav>
           <div className="donate-link">
-            <Link className="">Login</Link>
-            <Link className="">Register</Link>
+            <Link to={"login"} className="">
+              Login
+            </Link>
+            <Link to={"register"} className="">
+              Register
+            </Link>
           </div>
         </div>
       </header>
